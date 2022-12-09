@@ -1,38 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@300;400;500;700&family=Sen:wght@400;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Urbanist:ital,wght@0,100;0,400;1,400&display=swap");
+:root {
+  --primary-app-color: #02203c;
+  --secondary-app-color: #001528;
+  --standout-color: #ff7f2a;
+  --darh-orange: "#ff5823";
+}
+
 .App {
+}
+
+span {
+  font-family: "Ubuntu";
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section {
+  background: linear-gradient(
+    -90deg,
+    var(--primary-app-color),
+    var(--secondary-app-color)
+  );
+
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 53% 99%, 51% 100%, 0 79%);
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  background: var(--primary-app-color);
+  top: 0px;
+}
+.nav-items {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Ubuntu";
+}
+.nav-items:hover {
+  color: var(--standout-color);
+}
+.brand-name {
+  font-family: "oswald";
+  color: #fff;
+  font-size: 2rem;
+}
+.px-10 {
+  padding-inline: 90px;
+}
+.herosection2 {
+  padding-top: 60px;
+}
+.Im-text-section {
   text-align: center;
+  padding-top: 52px;
+}
+.Im-text {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.brand {
+  color: var(--standout-color);
+  font-family: "oswald";
+}
+.name-Im-text {
+  color: var(--standout-color);
+  font-size: 28px;
+}
+.Im-text-enthusiastic {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.Im-text-subheading {
+  font-family: "open sans";
+  color: #fff;
+  font-size: 1.4rem;
+}
+.btn-hire-me {
+  font-size: 1.3rem;
+  font-family: "ubuntu";
+  color: #fff;
+  background: transparent;
+  border-radius: 25px;
+  margin-inline: 12px;
+  padding: 5px 40px;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+  animation: Anim 1s ease-in-out infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-hire-me:hover {
+  transform: translateY(-5px);
+  background-color: var(--standout-color);
+  color: #1c1c1c;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn-resume-me {
+  font-size: 1.3rem;
+  font-family: "Ubuntu";
+  color: #fff;
+  background: red;
+  border-radius: 25px;
+  margin-inline: 12px;
+  padding: 5px 40px;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+}
+.btn-resume-me:hover {
+  transform: translateY(-5px);
+}
+@keyframes Anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
+.custom-img {
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  padding-bottom: 12px;
+  border: 2px solid white;
+}
+/*about me section */
+.about-me-text {
+  font-family: "Ubuntu";
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.why-text-sub {
+  font-weight: 700;
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+  opacity: 0.8;
+  text-transform: capitalize;
+  text-align: center;
+}
+.aboutme-inside {
+  width: 70%;
+  margin-inline: auto;
+}
+.some-text-aboutme {
+  font-weight: 600;
+  font-family: "Ubuntu";
+  opacity: 0.8;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.few-highlights {
+  font-family: "Ubuntu";
+  padding-block: 12px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.few-text {
+  font-weight: 900;
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+}
+.few-list {
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+}
+
+/* resume css */
+
+.resume-options-items {
+  width: 1%;
+  transition: all 0.4s ease-in-out;
+  padding-block: 24px;
+  padding-inline: 24px;
+  color: #000;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.resume-options-items:hover {
+  width: 100%;
+  background: linear-gradient(
+    -90deg,
+    var(--primary-app-color),
+    var(--secondary-app-color)
+  );
+
+  color: #fff;
+}
+.icons-span {
+  margin-block: 24px;
+  margin-inline: 24px;
+}
+.selected {
+  background: linear-gradient(
+    -45deg,
+    var(--primary-app-color),
+    var(--secondary-app-color)
+  );
+
+  width: 100%;
+  color: #fff;
+}
+.bg-new {
+  background: linear-gradient(
+    -45deg,
+    var(--primary-app-color),
+    var(--secondary-app-color)
+  );
+}
+.resume-outer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--primary-app-color);
+  color: #fff;
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+}
+.resume-new-section {
+  margin-top: 42px;
+  background: #fff;
+  box-shadow: 10px 10px 31px 2px #1c1c1c;
+}
+
+/*-----------Testimonials-----------*/
+.testimonail-card {
+  border-radius: 50px 20px 50px 0px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3 ease;
+}
+.testimonail-card:hover {
+  background: var(--primary-app-color);
+  color: #fff;
+  transform: scale(1.05);
+}
+.img-test {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--standout-color);
+  transition: all 0.3s ease;
+}
+.Box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 0.3s ease;
+}
+.name {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  font-family: "Ubuntu";
+}
+.fonction {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0px 0 7px 0;
+  font-family: "Ubuntu";
 }
 
-.App-link {
-  color: #61dafb;
+blockquote.quote {
+  position: relative;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  width: 80%; /* create space for the quotes */
+  color: #484748;
+  margin: 1rem auto 2rem;
+}
+blockquote.EN {
+  background: linear-gradient(
+        to right,
+        var(--standout-color) 4px,
+        transparent 4px
+      )
+      0 100%,
+    linear-gradient(to left, var(--standout-color) 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, var(--standout-color) 4px, transparent 4px) 100%
+      0,
+    linear-gradient(to top, var(--standout-color) 4px, transparent 4px) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* -- create the quotation marks -- */
+blockquote.quote:before,
+blockquote.quote:after {
+  font-family: FontAwesome;
+  position: absolute;
+  color: var(--standout-color);
+  font-size: 34px;
+}
+
+blockquote.EN:before {
+  content: "\f10d";
+  top: -12px;
+  margin-right: -20px;
+  right: 100%;
+}
+blockquote.EN:after {
+  content: "\f10e";
+  margin-left: -20px;
+  left: 100%;
+  top: auto;
+  bottom: -20px;
 }

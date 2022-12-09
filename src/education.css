@@ -1,0 +1,27 @@
+.university-name {
+  font-family: "Ubuntu";
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--standout-color);
+}
+.university-degree {
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Ubuntu";
+  color: #1c1c1c;
+  text-transform: uppercase;
+}
+.year-passedout {
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--standout-color);
+  color: #ffff;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "ubuntu";
+}
